@@ -1,0 +1,1 @@
+also, besides education at geek brains/university i learn independently. Here I will push my code
