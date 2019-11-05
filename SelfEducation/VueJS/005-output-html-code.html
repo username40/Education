@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>output html code</title>
+</head>
+<body>
+    <div id="app">
+<!--        if you want put all html code you should know that's not a good idea-->
+<!--        but you can do it use v-html directive-->
+        <h2 v-html="link"></h2>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            link: '<a href="https://yandex.ru">yandex</a>'
+        }
+    })
+</script>
+</body>
+</html>
