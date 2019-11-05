@@ -1,0 +1,6 @@
+.basket{
+    display: flex;
+}
+.basket__item{
+    margin-top: 20px;
+}
