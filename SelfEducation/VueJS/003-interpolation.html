@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>interpolation</title>
+</head>
+<body>
+    <div id="app">
+<!--        inside interpolations you can call strings...-->
+        <h1>String: {{ name }}</h1>
+<!--        complete arithmetic operations + - * /-->
+        <h1>Sum: {{ 10 + 60 }}</h1>
+<!--        call numbers-->
+        <h1>Number: 100</h1>
+<!--        call methods-->
+        <h1>Method: {{ sayHello() }}</h1>
+<!--        write ternary-->
+        <h1>If Statement: {{ isOk ? 'I am OK!' : 'I am NOT ok!' }}</h1>
+<!--        use functions-->
+        <h1>Functions: {{ string.split('').reverse().join('') }}</h1>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            name: 'Vue!',
+            number: 100,
+            isOk: false,
+            string: "My name is Slava"
+        },
+        methods: {
+            sayHello() {
+                return "this return of a function"
+            }
+        }
+    })
+</script>
+</html>

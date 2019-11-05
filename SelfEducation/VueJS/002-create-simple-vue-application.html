@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create a simple vue.js app</title>
+</head>
+<body>
+<!--Second - you must set root element of your app-->
+<div id="app">
+    <input type="text" v-on:input="changeName">
+    <h1>hello {{ name }}</h1>
+</div>
+
+<!--At first you must connect vue-->
+<!--You can do this 3 way - CDN, download script file, CLI-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    // Third - you create a new Vue({}) and then magick is begins
+    new Vue({
+        // you must tell vue where is your application
+        el: '#app',
+        data: {
+            name: 'Vue'
+        },
+        // this is a very simple method shows how data field changing when you input something
+        methods: {
+            changeName(event) {
+                this.name = event.target.value
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add events</title>
+</head>
+<body>
+    <div id="app">
+        <h2>Счетчик = {{ counter }}</h2>
+        <button v-on:click="riseCounter">Увеличить</button>
+        <hr>
+        <h2 v-on:mouseover="onHover">Счетчик = {{ counter2 }}</h2>
+        <button v-on:click="counter2++">Увеличить</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                counter: 0,
+                counter2: 0
+            },
+            methods: {
+                riseCounter() {
+                    this.counter++
+                },
+                onHover(event){
+                    event.target.style.color = 'red'
+                }
+            }
+        })
+    </script>
+</body>
+</html>

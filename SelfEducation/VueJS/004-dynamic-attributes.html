@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dynamic attributes</title>
+</head>
+<body>
+    <div id="app">
+<!--        if you want put your data inside html attribute you must call v-bind: directive-->
+<!--        use interpolation inside html attributes is prohibited-->
+        <a v-bind:href="url">yandex</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                url: 'https://yandex.ru/'
+            }
+        })
+    </script>
+</body>
+</html>
