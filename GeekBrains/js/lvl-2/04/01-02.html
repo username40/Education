@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">One: 'Hi Mary.' Two: 'Oh, hi.'
+            One: 'How are you doing?'
+            Two: 'I'm doing alright. How about you?'
+                One: 'Not too bad. The weather is great isn't it?'
+                Two: 'Yes. It's absolutely beautiful today.'
+            One: 'I wish it was like this more frequently.'
+            Two: 'Me too.'
+            One: 'So where are you going now?'
+            Two: 'I'm going to meet a friend of mine at the department store.'
+            One: 'Going to do a little shopping?'
+            Two: 'Yeah, I have to buy some presents for my parents.'
+            One: 'What's the occasion?'
+                Two: 'It's their anniversary.'
+            One: 'That's great. Well, you better get going. You don't want to be late.'
+            Two: 'I'll see you next time.'
+            One: 'Sure. Bye.'</p>
+    <script>
+        // Не работает
+        //         let text = `One: 'Hi Mary.' Two: 'Oh, hi.'
+        // One: 'How are you doing?'
+        // Two: 'I'm doing alright. How about you?'
+        //     One: 'Not too bad. The weather is great isn't it?'
+        //     Two: 'Yes. It's absolutely beautiful today.'
+        // One: 'I wish it was like this more frequently.'
+        // Two: 'Me too.'
+        // One: 'So where are you going now?'
+        // Two: 'I'm going to meet a friend of mine at the department store.'
+        // One: 'Going to do a little shopping?'
+        // Two: 'Yeah, I have to buy some presents for my parents.'
+        // One: 'What's the occasion?'
+        //     Two: 'It's their anniversary.'
+        // One: 'That's great. Well, you better get going. You don't want to be late.'
+        // Two: 'I'll see you next time.'
+        // One: 'Sure. Bye.'`;
+        //         text.replace(/'/g, '"');
+        //         console.log(text);
+
+
+        // Так тоже не работает
+        // let text2 = document.querySelector('#text');
+    
+        // console.log(text2); // проверил что подключился правильно
+        // text2.replace(/'/g, '"');// text2.replace is not a function - Но почему, вроде все правильно
+        // console.log(text2);
+
+        // А вот так - работает но только в консоли браузера если сделать здесь то не работает - сделал в одну строку весь текст
+        let text3 = `One: 'Hi Mary.' Two: 'Oh, hi.' One: 'How are you doing?' Two: 'I'm doing alright. How about you?' One: 'Not too bad. The weather is great isn't it?' Two: 'Yes. It's absolutely beautiful today.' One: 'I wish it was like this more frequently.' Two: 'Me too.' One: 'So where are you going now?' Two: 'I'm going to meet a friend of mine at the department store.' One: 'Going to do a little shopping?' Two: 'Yeah, I have to buy some presents for my parents.' One: 'What's the occasion?' Two: 'It's their anniversary.' One: 'That's great. Well, you better get going. You don't want to be late.' Two: 'I'll see you next time.' One: 'Sure. Bye.'`;
+        // text3.replace(/'/g, '"');// Выдает ошибку
+        // Что в данном случае происходит с точки зрения регулярных выражений - в строке осуществляется поиск символа ' и заменяется на " а флаг g помогает сделать это во всем тексе а не только в первом вхождении.
+        
+
+        text3.replace(/('\B|\B')/g, '"'); // тоже не работает но в консоли браузера все если решать то работает.
+        // В данном случае с точки зрения регулярных выражений опять же при помощи флага g мы ищем все вхождения,
+        //  но теперь работаем не символом а с границей слов (причем слово здесь я имею ввиду не с позиции лексики
+        //  или филологии а с точки зрения набора символов), '\B - когда кавычка стоит перед началом символов,
+        //  \B' когда кавычка стоит после символов | - значит как своего рода логическое или
+        console.log(text3);
+
+        
+    
+    
+    </script>
+</body>
+</html>
