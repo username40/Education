@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>BRAND</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__left">
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="logo">
+                <h1 class="header__logo-title">bran<span>d</span></h1>
+            </a>
+            <form action="#" class="header__search-form">
+                <button class="browse-dropdown" id="browseDropDown">Browse<i class="fas fa-caret-down"></i></button>
+                <input type="text" placeholder="Search for item..." class="searchfield-input">
+                <button type="submit" class="searchBtn"><i class="fas fa-search"></i></button>
+                <nav class="header__search-form-dropdown-menu">
+                    <div class="square"></div>
+                    <ul class="dropdown-list">
+                        <li class="dropdown-list-title">Women</li>
+                        <li class="dropdown-item"><a href="product-page.html" class="dropdown-link">Dresses</a></li>
+                        <li class="dropdown-item"><a href="product-page.html" class="dropdown-link">Tops</a></li>
+                        <li class="dropdown-item"><a href="product-page.html" class="dropdown-link">Sweaters/Knits</a></li>
+                        <li class="dropdown-item"><a href="product-page.html" class="dropdown-link">Jackets/Coats</a></li>
+                        <li class="dropdown-item"><a href="product-page.html" class="dropdown-link">Blazers</a></li>
+                        <li class="dropdown-item"><a href="product-page.html" class="dropdown-link">Denim</a></li>
+                        <li class="dropdown-item"><a href="product-page.html" class="dropdown-link">Leggings/Pants</a></li>
+                        <li class="dropdown-item"><a href="product-page.html" class="dropdown-link">Skirts/Shorts</a></li>
+                        <li class="dropdown-item"><a href="product-page.html" class="dropdown-link">Accessories</a></li>
+                    </ul>
+                    <ul class="dropdown-list">
+                        <li class="dropdown-list-title">Men</li>
+                        <li class="dropdown-item"><a href="product-page.html" class="dropdown-link">Tees/Tank tops</a></li>
+                        <li class="dropdown-item"><a href="product-page.html" class="dropdown-link">Shirts/Polos</a></li>
+                        <li class="dropdown-item"><a href="product-page.html" class="dropdown-link">Sweaters</a></li>
+                        <li class="dropdown-item"><a href="product-page.html" class="dropdown-link">Sweatshirts/Hoodies</a></li>
+                        <li class="dropdown-item"><a href="product-page.html" class="dropdown-link">Blazers</a></li>
+                        <li class="dropdown-item"><a href="product-page.html" class="dropdown-link">Jackets/vests</a></li>
+                    </ul>
+                </nav>
+            </form>
+        </div>
+        <div class="header__right">
+            <div class="header__cart">
+                <img src="img/header/cart.svg" alt="product cart">
+                <span class="cart-value" id="cartValue">0</span>
+                <div class="header__cart-dropdown">
+                    <div class="square"></div>
+                    <div class="header__cart-dropdown-cart-item">
+                        <a href="single-page.html" class="header__cart-dropdown-item-link">
+                            <img src="img/header/cart__dropdown/00.jpg" alt="cart item icon">
+                            <div class="header__cart-dropdown-cart-item-description">
+                                <h3 class="header__cart-dropdown-item-title">Rebox Zane</h3>
+                                <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                                <p class="header__cart-dropdown-price"><span
+                                        class="header-dropdown-price-quantity">1</span> x <span>$250</span></p>
+                            </div>
+                        </a>
+                        <button class="header__cart-dropdown-delete-from-cart-btn"><i class="fas fa-times-circle"></i>
+                        </button>
+                    </div>
+                    <div class="header__cart-dropdown-cart-item">
+                        <a href="single-page.html" class="header__cart-dropdown-item-link">
+                            <img src="img/header/cart__dropdown/01.jpg" alt="cart item icon">
+                            <div class="header__cart-dropdown-cart-item-description">
+                                <h3 class="header__cart-dropdown-item-title">Rebox Zane</h3>
+                                <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                                <p class="header__cart-dropdown-price"><span
+                                        class="header-dropdown-price-quantity">1</span> x <span>$250</span></p>
+                            </div>
+                        </a>
+                        <button class="header__cart-dropdown-delete-from-cart-btn"><i class="fas fa-times-circle"></i>
+                        </button>
+                    </div>
+                    <p class="header__cart-dropdown-total-amount"><span>TOTAL</span><span
+                            id="headerCartDropDownTotalAmount">$500.00</span></p>
+                    <a href="checkout-page.html" class="header__dropdown-cart-proceed-your-order-link">checkout</a>
+                    <a href="shopping-cart-page.html" class="header__dropdown-cart-proceed-your-order-link">go to cart</a>
+                </div>
+
+            </div>
+            <button class="my-account-dropdown" id="myAccountDropDown">My Account<i class="fas fa-caret-down"></i>
+            </button>
+        </div>
+    </div>
+    <span class="header__bottom-border"></span>
+    <nav class="container menu">
+        <ul class="menu__list">
+            <li><a href="product-page.html">home</a></li>
+            <li><a href="product-page.html">men</a></li>
+            <li><a href="product-page.html">women</a></li>
+            <li><a href="product-page.html">kids</a></li>
+            <li><a href="product-page.html">accessories</a></li>
+            <li><a href="product-page.html">featured</a></li>
+            <li><a href="product-page.html">hot deals</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="content">
+    <div class="name-of-page">
+        <div class="container">
+            <h2 class="name-of-page__title">New Arrivals</h2>
+            <div class="name-of-page__breadcrumbs">Home/Men/<span>New Arrivals</span></div>
+        </div>
+    </div>
+    <div class="shopping-cart">
+        <div class="container">
+            <table class="shopping-cart__table">
+                <tr>
+                    <th class="shopping-cart__title">Product details</th>
+                    <th class="shopping-cart__title">Unite price</th>
+                    <th class="shopping-cart__title">quantity</th>
+                    <th class="shopping-cart__title">shipping</th>
+                    <th class="shopping-cart__title">subtotal</th>
+                    <th class="shopping-cart__title">action</th>
+                </tr>
+                <tr class="shopping-cart__item">
+                    <td>
+                        <a href="single-page.html" class="shopping-cart__item-link-to-good">
+                            <img src="img/shopping-cart/shopping-cart_item/01.jpg" alt="cart image">
+                            <div class="shopping-cart__item-description">
+                                <h4 class="shopping-cart__item-description-title">Mango  People  T-shirt</h4>
+                                <p class="shopping-cart__item-description-parametres">size: <span>XXL</span></p>
+                                <p class="shopping-cart__item-description-parametres">color: <span>Red</span></p>
+                            </div>
+                        </a>
+                    </td>
+                    <td>$150</td>
+                    <td><input type="number" class="shopping-cart__item-input-number" min="1" value="1"></td>
+                    <td>FREE</td>
+                    <td>$300</td>
+                    <td>
+                        <button class="header__cart-dropdown-delete-from-cart-btn"><i class="fas fa-times-circle"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="shopping-cart__item">
+                    <td>
+                        <a href="single-page.html" class="shopping-cart__item-link-to-good">
+                            <img src="img/shopping-cart/shopping-cart_item/02.jpg" alt="cart image">
+                            <div class="shopping-cart__item-description">
+                                <h4 class="shopping-cart__item-description-title">Mango  People  T-shirt</h4>
+                                <p class="shopping-cart__item-description-parametres">size: <span>XXL</span></p>
+                                <p class="shopping-cart__item-description-parametres">color: <span>Red</span></p>
+                            </div>
+                        </a>
+                    </td>
+                    <td>$150</td>
+                    <td><input type="number" class="shopping-cart__item-input-number" min="1" value="1"></td>
+                    <td>FREE</td>
+                    <td>$300</td>
+                    <td>
+                        <button class="header__cart-dropdown-delete-from-cart-btn"><i class="fas fa-times-circle"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="shopping-cart__item">
+                    <td>
+                        <a href="single-page.html" class="shopping-cart__item-link-to-good">
+                            <img src="img/shopping-cart/shopping-cart_item/03.jpg" alt="cart image">
+                            <div class="shopping-cart__item-description">
+                                <h4 class="shopping-cart__item-description-title">Mango  People  T-shirt</h4>
+                                <p class="shopping-cart__item-description-parametres">size: <span>XXL</span></p>
+                                <p class="shopping-cart__item-description-parametres">color: <span>Red</span></p>
+                            </div>
+                        </a>
+                    </td>
+                    <td>$150</td>
+                    <td><input type="number" class="shopping-cart__item-input-number" min="1" value="1"></td>
+                    <td>FREE</td>
+                    <td>$300</td>
+                    <td>
+                        <button class="header__cart-dropdown-delete-from-cart-btn"><i class="fas fa-times-circle"></i>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="actions-with-shopping-cart container">
+        <button class="action-with-shopping-cart">cLEAR SHOPPING CART</button>
+        <a href="product-page.html" class="action-with-shopping-cart">cONTINUE sHOPPING</a>
+    </div>
+    <article class="contact-details">
+        <div class="container">
+            <form action="#" class="contact-details__form">
+                <h3 class="contact-details__title">Shipping Adress</h3>
+                <select name="country" class="contact-details__input">
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Usa">Usa</option>
+                    <option value="Russia">Russia</option>
+                </select>
+                <input type="text" class="contact-details__input" placeholder="State">
+                <input type="text" class="contact-details__input" placeholder="ZIPcode">
+                <button type="submit" class="contact-details__form-btn">get a quote</button>
+            </form>
+            <form action="#" class="contact-details__form">
+                <h3 class="contact-details__title">coupon discount</h3>
+                <p class="contact-details__description">Enter your coupon code if you have one</p>
+                <input type="text" class="contact-details__input" placeholder="Coupon">
+                <button type="submit" class="contact-details__form-btn">Apply coupon</button>
+            </form>
+            <div class="contact-details__proceed-to-checkout">
+                <h4 class="contact-details__proceed-to-checkout__title_sub-total">Sub total <span>$900</span></h4>
+                <h3 class="contact-details__proceed-to-checkout__title_grand-total">GRAND TOTAL <span>$900</span></h3>
+                <a href="checkout-page.html" class="contact-details__proceed-to-checkout__link">proceed to checkout</a>
+            </div>
+        </div>
+    </article>
+    <article class="feedback-and-subscribe">
+        <div class="container">
+            <div class="feedback">
+                <img class="feedback__photo" src="img/main-page/feedback-and-subscribe/feedback__photo.png" alt="">
+                <div class="feedback__description">
+                    <p class="feedback__description-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                    <h3 class="feedback__description-author-name">Bin Burhan</h3>
+                    <p class="feedback__description-geolocation">Dhaka, Bd</p>
+                </div>
+            </div>
+            <div class="subscribe">
+                <h3 class="subscribe__title">Subscribe <br>
+                    <span>FOR OUR NEWsLETTER AND PROMOTION</span></h3>
+                <form action="#" class="subscribe__form" method="post">
+                    <input type="text" placeholder="Enter Your Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+    </article>
+    <article class="company-info">
+        <div class="container">
+            <div class="company-info__description">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.svg" alt="logo">
+                    <h2 class="header__logo-title">bran<span>d</span></h2>
+                </a>
+                <p class="company-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi
+                    aspernatur
+                    delectus distinctio dolore dolorum enim esse eveniet fugit ipsam ipsum, labore nam nisi nobis non
+                    nostrum obcaecati, provident reiciendis!
+                </p>
+                <p class="company-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+                    aspernatur cumque distinctio dolore eligendi et, ipsam itaque laboriosam maiores minima minus modi
+                    nam,
+                    quae rem tenetur totam veritatis? Aliquam, deserunt?
+                </p></div>
+            <nav class="company-info__navigation-lists">
+                <ul class="company-info__navigation-list">
+                    <li class="navigation-list__title">COMPANY</li>
+                    <li><a href="index.html" class="navigation-list__item">Home</a></li>
+                    <li><a href="product-page.html" class="navigation-list__item">Shop</a></li>
+                    <li><a href="#" class="navigation-list__item">About</a></li>
+                    <li><a href="#" class="navigation-list__item">How It Works</a></li>
+                    <li><a href="#" class="navigation-list__item">Contact</a></li>
+                </ul>
+                <ul class="company-info__navigation-list">
+                    <li class="navigation-list__title">INFORMATION</li>
+                    <li><a href="#" class="navigation-list__item">Terms & Condition</a></li>
+                    <li><a href="#" class="navigation-list__item">Privacy Policy</a></li>
+                    <li><a href="#" class="navigation-list__item">How to Buy</a></li>
+                    <li><a href="#" class="navigation-list__item">How to Sell</a></li>
+                    <li><a href="#" class="navigation-list__item">Promotion</a></li>
+                </ul>
+                <ul class="company-info__navigation-list">
+                    <li class="navigation-list__title">SHOP CATEGORY</li>
+                    <li><a href="product-page.html" class="navigation-list__item">Men</a></li>
+                    <li><a href="product-page.html" class="navigation-list__item">Women</a></li>
+                    <li><a href="product-page.html" class="navigation-list__item">Child</a></li>
+                    <li><a href="product-page.html" class="navigation-list__item">Apparel</a></li>
+                    <li><a href="product-page.html" class="navigation-list__item">Brows All</a></li>
+                </ul>
+            </nav>
+        </div>
+    </article>
+</main>
+<footer class="footer">
+    <div class="container">
+        <p class="footer__copyright">© <span id="currentYear">2017</span> Brand All Rights Reserved.</p>
+        <nav class="footer__smm">
+            <a href="#" class="footer__social-media-links"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer__social-media-links"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer__social-media-links footer__social-media-links_disabled"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer__social-media-links"><i class="fab fa-pinterest"></i></a>
+            <a href="#" class="footer__social-media-links"><i class="fab fa-google-plus-g"></i></a>
+        </nav>
+    </div>
+</footer>
+<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+</script>
+</body>
+</html>
