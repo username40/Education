@@ -1,0 +1,74 @@
+[
+  {
+    "id_product": 101,
+    "img_src": "img/main-page/featured-items/item-001.jpg",
+    "product_name": "Red Mango People T-shirt",
+    "price": 52
+  },
+  {
+    "id_product": 102,
+    "img_src": "img/main-page/featured-items/item-002.jpg",
+    "product_name": "Orange Mango People T-shirt",
+    "price": 53
+  },
+  {
+    "id_product": 103,
+    "img_src": "img/main-page/featured-items/item-003.jpg",
+    "product_name": "Yellow Mango People T-shirt",
+    "price": 54
+  },
+  {
+    "id_product": 104,
+    "img_src": "img/main-page/featured-items/item-004.jpg",
+    "product_name": "Green Mango People T-shirt",
+    "price": 55
+  },
+  {
+    "id_product": 105,
+    "img_src": "img/main-page/featured-items/item-005.jpg",
+    "product_name": "White-Blue Mango People T-shirt",
+    "price": 56
+  },
+  {
+    "id_product": 106,
+    "img_src": "img/main-page/featured-items/item-006.jpg",
+    "product_name": "Blue Mango People T-shirt",
+    "price": 57
+  },
+  {
+    "id_product": 107,
+    "img_src": "img/main-page/featured-items/item-007.jpg",
+    "product_name": "Violet Mango People T-shirt",
+    "price": 58
+  },
+  {
+    "id_product": 108,
+    "img_src": "img/main-page/featured-items/item-008.jpg",
+    "product_name": "Black Mango People T-shirt",
+    "price": 59
+  },
+  {
+    "id_product": 109,
+    "img_src": "img/main-page/featured-items/item-001.jpg",
+    "product_name": "Purple Mango People T-shirt",
+    "price": 60
+  },
+  {
+    "id_product": 110,
+    "img_src": "img/main-page/featured-items/item-002.jpg",
+    "product_name": "Lime Mango People T-shirt",
+    "price": 61
+  },
+  {
+    "id_product": 111,
+    "img_src": "img/main-page/featured-items/item-003.jpg",
+    "product_name": "White Mango People T-shirt",
+    "price": 62
+  },
+  {
+    "id_product": 112,
+    "img_src": "img/main-page/featured-items/item-004.jpg",
+    "product_name": "Transparent Mango People T-shirt",
+    "price": 63
+  }
+]

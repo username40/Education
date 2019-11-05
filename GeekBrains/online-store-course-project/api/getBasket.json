@@ -1,0 +1,18 @@
+{
+    "contents": [
+        {
+            "id_product": 101,
+            "img_src": "img/main-page/featured-items/item-001.jpg",
+            "product_name": "Red Mango People T-shirt",
+            "price": 52,
+            "quantity": 1
+        },
+        {
+            "id_product": 102,
+            "img_src": "img/main-page/featured-items/item-002.jpg",
+            "product_name": "Red Mango People T-shirt",
+            "price": 53,
+            "quantity": 1
+        }
+    ]
+}
