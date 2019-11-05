@@ -1,0 +1,26 @@
+[
+    {
+        "id_product": 113,
+        "img_src": "img/single-page/you-may-like-also/000.jpg",
+        "product_name": "BLAZE LEGGINGS",
+        "price": 64
+      },
+      {
+        "id_product": 114,
+        "img_src": "img/single-page/you-may-like-also/001.jpg",
+        "product_name": "ALEXA SWEATER",
+        "price": 65
+      },
+      {
+        "id_product": 115,
+        "img_src": "img/single-page/you-may-like-also/002.jpg",
+        "product_name": "AGNES TOP",
+        "price": 66
+      },
+      {
+        "id_product": 116,
+        "img_src": "img/single-page/you-may-like-also/000.jpg",
+        "product_name": "SYLVA SWEATER",
+        "price": 67
+      }
+]
