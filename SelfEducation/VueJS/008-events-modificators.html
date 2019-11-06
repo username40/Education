@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>events modificators</title>
+</head>
+<body>
+    <div id="app">
+<!--        This is old school-->
+        <a href="https://yandex.ru/" target="_blank" v-on:click="clickLink">yandex</a>
+<!--        now you can use inline methods from vue.js-->
+        <a href="https://yandex.ru/" target="_blank" v-on:click.prevent>yandex</a>
+
+        <h2 v-on:mousemove="handleMouseMove">
+            X: {{ x }} / Y: {{ y }}
+<!--        Also you can use stop if you want get same result like stopPropagation-->
+            <span v-on:mousemove.stop="">Не изменять</span>
+        </h2>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue ({
+        el: '#app',
+        data: {
+
+        },
+        methods: {
+            clickLink(event) {
+                event.preventDefault()
+            },
+            handleMouseMove(event) {
+                this.x = event.clientX
+                this.y = event.clientY
+            }
+        }
+    })
+</script>
+</body>
+</html>
