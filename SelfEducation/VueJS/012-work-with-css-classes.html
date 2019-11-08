@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>work with css classes</title>
+    <style>
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 40px;
+        }
+
+        .red{background: red}
+        .blue{background: blue}
+        .green{background: green}
+    </style>
+</head>
+<body>
+    <div id="app">
+<!--        and if you use computed you don't need to call the function() just write her name-->
+        <div
+                class="circle"
+                :class="getCssClasses"
+                @click="isActive = !isActive"></div>
+<!--        you can bind classes into your element-->
+        <div class="circle" :class="[color, {red: 'isActive'}]"></div>
+        <input type="text" v-model="color">
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            isActive: false,
+            color: 'blue'
+        },
+        // why not a methods? because methods may call very often and you can lost performance
+        // you can use computed
+        computed: {
+            getCssClasses() {
+                return {
+                    'red': this.isActive,
+                    'green': !this.isActive
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>
