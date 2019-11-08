@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+<!--    If you know what is if else in javaScript it's very simple for you-->
+<h2 v-if="isVisible">I am visible</h2>
+    <h2 v-else>No I am not visible</h2>
+    <button @click="isVisible = !isVisible">Toggle</button>
+    <hr>
+    <h2 v-if="type === 'a'">a</h2>
+    <h2 v-else-if="type === 'b'">b</h2>
+    <h2 v-else-if="type === 'c'">c</h2>
+    <h2 v-else>not match</h2>
+    <input type="text" v-model="type">
+    <hr>
+<!--    Also if you need use v-if for many elems you can use template html5 tag-->
+    <template v-if="elems">
+        <h2>title in template</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </template>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            isVisible: true,
+            type: 'a',
+            elems: true
+        }
+    })
+</script>
+</body>
+</html>

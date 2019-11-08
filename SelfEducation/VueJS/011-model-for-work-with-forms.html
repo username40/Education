@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>model fro work with forms</title>
+</head>
+<body>
+<div id="app">
+<!--    v-model is a 2 way binding between control that you want modifcate and input-->
+<!--    also if you want to change value after all changes you can use .lazy-->
+<!--    after exiting from control changes will be accepted-->
+<!--    try))-->
+    <input type="text" v-model.lazy="inputValue">
+    <h2>{{ inputValue }}</h2>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            inputValue: 'Initial Value'
+        }
+    })
+</script>
+</body>
+</html>
