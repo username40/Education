@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>work with lists</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="(item, index) in people">{{ index + 1 }} - {{ item }}</li>
+    </ul>
+    <ul>
+        <li v-for="item in items">{{ item.id }} - {{ item.name }}</li>
+    </ul>
+    <ol>
+        <li v-for="item in 10">{{ item }}</li>
+    </ol>
+    <ul>
+        <li v-for="(value, key, index) in person">{{ index + 1 }} - {{ key }}, {{ value }}</li>
+    </ul>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            people: ['one', 'two', 'three'],
+            items: [
+                {
+                    id: 1,
+                    name: 'first'
+                },
+                {
+                    id: 2,
+                    name: 'second'
+                },
+                {
+                    id: 3,
+                    name: 'third'
+                },
+                {
+                    id: 4,
+                    name: 'fourth'
+                }
+            ],
+            person: {
+                name: 'Slava',
+                age: 32,
+                job: 'Frontend'
+            }
+        }
+    })
+</script>
+</body>
+</html>
