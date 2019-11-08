@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-show vs v-if</title>
+</head>
+<body>
+
+<div id="app">
+<!--    Vue.js has 2 ways display elements-->
+<!--    v-if and v-show-->
+<!--    On the your interface you don't see different-->
+<!--    Different is inside-->
+<!--    v-if re-render your app and when you use it v-if delete v-else elements from DOM-->
+<!--    at the same time v-show just hide it use display: none-->
+<!--    if you use some switchers for your users i recommend you use v-show-->
+<!--    your users don't wait render elements-->
+    <h1 v-if="isVisible">Hello Vue</h1>
+    <h1 v-else>Goodbye Vue</h1>
+    <button @click="isVisible = !isVisible">Toggle</button>
+    <hr>
+    <h1 v-show="isVisible2">Hello Vue</h1>
+    <h1 v-show="!isVisible2">Goodbye Vue</h1>
+    <button @click="isVisible2 = !isVisible2">Toggle</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            isVisible: true,
+            isVisible2: true
+        }
+    })
+</script>
+</body>
+</html>
