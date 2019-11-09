@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>access to DOM elements</title>
+</head>
+<body>
+<div id="app">
+    <h2 ref="heading">{{ title }}</h2>
+    <button @click="updateTitle">update</button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            title: 'Hello I am vue'
+        },
+        methods: {
+            updateTitle() {
+                this.title = 'New Title!'
+                this.$refs.heading.style.color = 'red'
+                // if you use document.querySelector - it is old school
+                // in vue you have a virtual dom it is more performance
+                // use $refs and be a good boy ))
+                console.log(this.$refs.heading)
+                console.log(document.querySelector('h2'))
+            }
+        }
+    })
+</script>
+</body>
+</html>
