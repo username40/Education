@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template property</title>
+</head>
+<body>
+<div id="app"></div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    let vue = new Vue({
+        data: {
+            title: 'Hello Vue'
+        },
+        // template must have only one root elem
+        // in template you can write html-code ant it render inside app
+        template: '<h1>{{ title }}</h1>'
+    })
+
+    // after initialize vue app you can add element
+    vue.$mount('#app')
+</script>
+</body>
+</html>

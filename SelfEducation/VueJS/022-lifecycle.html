@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h2>{{ title }}</h2>
+        <button @click="title = 'New title'">Update</button>
+        <button @click="doDestroy">desdtroy</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                title: 'hello!'
+            },
+            methods: {
+                doDestroy: function() {
+                    this.$destroy();
+                }
+            },
+            // After initialization and Vue prepare to create new app
+            beforeCreate: function() {
+                console.log('Before create')
+            },
+            // Vue app was created!
+            created: function() {
+                console.log('Created');
+            },
+            // Vue analyzing template that we gave and Vue prepare
+            // install it into app (into DOM)
+            beforeMount: function() {
+                console.log('Before Mount');
+            },
+            // template was inserted
+            mounted: function() {
+                console.log('Mounted')
+            },
+            // called before changes
+            beforeUpdate: function() {
+                console.log('before Update');
+            },
+            // called after changes
+            updated: function() {
+                console.log('Updated')
+            },
+            // this watches for delete component
+            beforeDestroy: function() {
+                console.log('before Destroy');
+            },
+            destroyed: function() {
+                console.log('destroyed');
+            }
+
+        })
+    </script>
+</body>
+</html>

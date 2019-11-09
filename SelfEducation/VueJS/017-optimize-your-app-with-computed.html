@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!--    Computed helps you avoid call functions when you don't need it-->
+
+    <h2>Counter {{ counter }} \ {{ counter2 }}</h2>
+    <h3>{{ result() }}</h3>
+    <!--    When you call computed you should not write () only name of function-->
+    <h3>Computed Result: {{ computedResult }}</h3>
+    <button @click="add()">Add</button>
+    <button @click="sub()">Sub</button>
+    <button @click="counter2++">Add counter2</button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            counter: 0,
+            counter2: 0,
+            condition: ''
+        },
+        methods: {
+            add() {
+                this.counter++
+                // this.condition = this.counter > 3 ? 'More than 3' : 'less than 3'
+            },
+            sub() {
+                this.counter--
+                //DRY
+                //this.condition =
+            },
+            result() {
+                //this function call anytime when you push any button, also Add counter2, but for what?
+                console.log('result was called')
+                return this.counter > 3 ? 'More than 3' : 'less than 3'
+            }
+        },
+        computed: {
+            computedResult() {
+                console.log('computedResult was called')
+                return this.counter > 3 ? 'More than 3' : 'less than 3'
+            }
+        }
+    })
+</script>
+</body>
+</html>
