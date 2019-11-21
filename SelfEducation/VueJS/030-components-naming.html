@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+            <my-counter v-for="count in 2"></my-counter>
+            <my-count></my-count>
+    </div>
+    <hr>
+    <div id="app2">
+        <my-counter></my-counter>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+        let component = {
+            template: `
+            <div>
+                <h1>Local component</h1>
+                <h2>counter: {{ counter }}</h2>
+                <button @click="add">++</button>
+            </div>
+            `,
+            data: function(){
+                return {
+                    counter: 0
+                }
+            },
+            methods: {
+                add: function() {
+                    this.counter++
+                }
+            }
+        }
+        Vue.component('my-counter', {
+            template: `
+            <div>
+                <h2>counter: {{ counter }}</h2>
+                <button @click="add">++</button>
+            </div>
+            `,
+            data: function(){
+                return {
+                    counter: 0
+                }
+            },
+            methods: {
+                add: function() {
+                    this.counter++
+                }
+            }
+        })
+
+
+        new Vue({
+            el: '#app',
+            data: {
+                counter: 0,
+                counter2: 0
+            },
+            // what if we can't write name of tags in ''?
+            // We can use camelCase!
+            components: {
+                // i called my tag is myCount
+                // in HTML i can write <my-count></my-count> and
+                // everything is OK
+                myCount: component
+            }
+        })
+
+        new Vue({
+            el: '#app2',
+            components: {
+                'my-counter': component
+            }
+        })
+    </script>
+</body>
+</html>
