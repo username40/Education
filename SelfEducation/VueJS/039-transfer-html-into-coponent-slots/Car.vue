@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- you can use 1 slot for all or many slots  but must give names-->
     <slot name="title"></slot>
     <hr>
     <hr>
