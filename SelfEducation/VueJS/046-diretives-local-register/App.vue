@@ -2,8 +2,7 @@
   <div>
     <h2 v-colored:background.font="'red'">{{ title }}</h2>
     <h2 v-colored:color.delay="'blue'">{{ title }}</h2>
-<!--    after js manipulations call your local directive-->
-<!--    you can use your directive only inside this components-->
+<!--    // after all manipulations you can call your directive only inside this component-->
     <h2 v-font>Local font Directive</h2>
     
   </div>
@@ -17,11 +16,11 @@ export default {
       title: 'Hello! I\'m Vue!',
     }
   },
-  // for creating directives you must write a special field - directives
+  // for creating directives use a special field
   directives: {
-    // then create object that you will use like a directive
-    // and write there your function
+    // then you create object with name of your directive
       font: {
+        // then inside object write a function
         bind(el, bindings, vNode) {
           el.style.fontSize = '40px'
         }
