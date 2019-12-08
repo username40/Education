@@ -15,6 +15,7 @@
 <!--        here you check special fields in vuelidate-->
         <div class="invalid-feedback" v-if="!$v.email.required">Email field is required</div>
         <div class="invalid-feedback" v-if="!$v.email.email">This field should be an email</div>
+        <div class="invalid-feedback" v-if="!$v.email.uniqEmail">This email is already used</div>
       </div>
       <div class="form-group">
         <label for="password">Password</label>
@@ -64,14 +65,24 @@
     validations: {
       email: {
         required,
-        email
+        email,
+        // here we emulate situation that we check on the server that email is already use or not
+        uniqEmail(newEmail) {
+          if (newEmail === '') {
+            return true
+          }
+          return new Promise ((resolve, reject) => {
+            setTimeout(() => {
+              const value = newEmail !== 'test@mail.ru'
+              resolve(value)
+            }, 3000)
+          })
+        }
       },
       password: {
-        // here you can set minimum lenght for password
         minLength: minLength(6)
       },
       confirmPassword: {
-        // with sameAs you can check the match your password
         sameAs: sameAs('password')
       }
     }
