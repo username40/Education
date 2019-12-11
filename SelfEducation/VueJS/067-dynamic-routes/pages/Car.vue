@@ -9,7 +9,7 @@
       return {
         // id: this.$router.currentRoute.params['id'] this is the same strings...
         // it takes id from router and put it in the id field inside data
-        id: this.$route.params[id]
+        id: this.$route.params['id']
       }
     },
     watch: {
