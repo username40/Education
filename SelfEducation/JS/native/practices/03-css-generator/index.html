@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+<div class="container">
+<div class="border-rangers"><div>
+    <p>Верхний левый угол:</p>
+    <input type="range" min="0" max="100" value="0" id="rtl"
+           oninput="changeRadius()">
+</div>
+    <div>
+        <p>Верхний правый угол:</p>
+        <input type="range" min="0" max="100" value="0" id="rtr"
+               oninput="changeRadius()">
+    </div>
+    <div>
+        <p>Нижний правый угол:</p>
+        <input type="range" min="0" max="100" value="0" id="rbr"
+               oninput="changeRadius()">
+    </div>
+    <div>
+        <p>Нижний левый угол:</p>
+        <input type="range" min="0" max="100" value="0" id="rbl"
+               oninput="changeRadius()">
+    </div></div>
+
+<div class="view-result" id="viewResult"></div>
+</div>
+<p class="result-title">Результат:</p>
+<p id="outputCssCode" class="output-css-code">border-radius: <span id="ttl">0</span>px <span id="ttr">0</span>px <span id="tbr">0</span>px <span id="tbl">0</span>px;</p>
+<script src="script.js"></script>
+</body>
+</html>

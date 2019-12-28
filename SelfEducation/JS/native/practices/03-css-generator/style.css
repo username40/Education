@@ -1,0 +1,18 @@
+.container{
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+.view-result{
+    margin-top: 50px;
+    width: 300px;
+    height: 200px;
+    background-color: #00BF02;
+
+}
+
+.output-css-code, .result-title{
+    text-align: center;
+    font-size: 25px;
+}
