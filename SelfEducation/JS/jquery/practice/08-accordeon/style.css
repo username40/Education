@@ -1,0 +1,35 @@
+.accordeon {
+    list-style-type: none;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    margin: 0.5rem 0 1rem 0;
+    padding-left: 0;
+    width: 30%;
+}
+
+.accordeon-header {
+    background-color: #fff;
+    border-bottom: 1px solid #dddddd;
+    cursor: pointer;
+    min-height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+}
+
+.accordeon-header:after {
+    content: '\02795';
+    font-size: 0.6rem;
+    color: #777777;
+    float: right;
+}
+
+.accordeon-header.active:after{
+    content: '\02796';
+}
+
+.accordeon-body {
+    display: none;
+    padding: 1rem;
+    border-bottom: 1px solid #dddddd;
+}
