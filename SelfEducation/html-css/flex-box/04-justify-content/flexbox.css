@@ -1,0 +1,24 @@
+﻿.flex-container{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;/*расстояние от края до первого элемента - всегда равно половине расстояния от 1 до 2 элемента*/
+    
+}
+/*
+.flex-element:first-child{
+    margin-right: auto;
+}
+.flex-element:last-child{
+    margin-left: auto;
+}
+.flex-element:nth-child(4){
+    margin: auto;
+}
+*/

@@ -1,0 +1,25 @@
+﻿.flex-container{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+   /* -ms-align-items: flex-start;
+    align-items: flex-start;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+    -ms-align-items: center;
+    align-items: center;*/
+    align-content: stretch;
+    align-content: flex-start;
+    align-content: center;
+}
+.flex-element{
+    flex: 1 100px;
+}
+.element-1{
+    -ms-align-self: flex-end;
+    align-self: flex-end;
+}

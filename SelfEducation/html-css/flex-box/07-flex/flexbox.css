@@ -1,0 +1,11 @@
+﻿.flex-container{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-element{
+    flex: 1 200px;/*1 значение - flex-grow, 2 значения - flex-grow flex basis*/
+}
