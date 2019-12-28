@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body onload="console.log('Страница загружена')">
+<div onclick="console.log('Кликнули 1 раз');">1 клик</div>
+<div ondblclick="console.log('Кликнули 2 раза');">2 клика</div>
+
+<form onsubmit="return confirm('Submit!!!!');">
+    <input type="text" onfocus="console.log('focused');" placeholder="input" onblur="console.log('blured');">
+    <button type="submit">отправить</button>
+</form>
+    <script src="script.js"></script>
+</body>
+</html>
