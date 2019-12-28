@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<h2>Money converter</h2>
+
+<p>
+    <label>$</label>
+    <input type="number" id="usd" placeholder="$$$"
+           oninput="moneyConverter(this.value)" onchange="moneyConverter(this.value)">
+</p>
+<p>RUB: <span id="resultUSD"></span></p>
+<p>EUR: <span id="resultEUR"></span></p>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<select name="brands" id="selectBrands" onchange="selectBrands()">
+    <option value="ChooseMe">Выберите бренд</option>
+    <option value="Apple">Apple</option>
+    <option value="Asus">Asus</option>
+    <option value="Dell">Dell</option>
+    <option value="Samsung">Samsung</option>
+    <option value="Xiaomi">Xiaomi</option>
+</select>
+<p id="brandValue">Выбран бренд:</p>
+<p>Сколько единиц техники хотите заказать?</p>
+<input type="range" min="0" max="100" step="1" oninput="checkRange()"
+       id="range" value="0">
+<p id="rangeValue">0</p>
+
+<script src="script.js"></script>
+</body>
+</html>
