@@ -1,0 +1,29 @@
+﻿.flex-container{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.flex-element{
+    order: 0;
+    /*по умолчанию*/
+    /*flex-grow: 0;*/
+    /*тянутся на всю ширину и воспринимаются как 1 к 1*/
+    flex-grow: 1;
+    /*width: 400px;*/
+    /*flex-shrink: 1;*/
+    flex-basis: 100px;
+}
+.element-1,.element-4{
+    /*меньше в 2 раза и при дальнейшем уменьшении сожмется в 2 раза быстрее*/
+    /*flex-shrink: 2;*/
+}
+.element-4{
+    /*будет в 2 раза больше остальных*/
+    /*flex-grow: 2;*/
+    
+}

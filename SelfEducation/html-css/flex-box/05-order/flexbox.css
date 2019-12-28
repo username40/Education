@@ -1,0 +1,16 @@
+﻿.flex-container{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.element-1{
+    order: 1;
+}
+.element-8{
+    order: -1;
+}
+.element-2{
+    order: 2
+}

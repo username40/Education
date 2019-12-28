@@ -1,0 +1,18 @@
+﻿.list { 
+  list-style-type: none;
+  counter-reset: listcounter;  
+}
+
+.list__item:before {
+  content: counter(listcounter) '. ';
+  counter-increment: listcounter;
+}
+
+.list_sub {
+  counter-reset: listcounter_sub;  
+}
+
+.list__item_sub:before {
+  content: counter(listcounter) '.' counter(listcounter_sub) '. ';
+  counter-increment: listcounter_sub;
+}
