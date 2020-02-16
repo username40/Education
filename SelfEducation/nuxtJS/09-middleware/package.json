@@ -1,0 +1,19 @@
+{
+  "name": "nuxt-theory",
+  "version": "1.0.0",
+  "description": "My cool Nuxt.js project",
+  "author": "username40",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.9.5",
+    "bootstrap": "^4.4.1",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {}
+}
