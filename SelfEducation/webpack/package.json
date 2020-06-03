@@ -1,0 +1,21 @@
+{
+  "name": "username40-webpack",
+  "version": "1.0.0",
+  "description": "learn webpack project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "js",
+    "javascript",
+    "node"
+  ],
+  "author": "Slava Romantsov",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
