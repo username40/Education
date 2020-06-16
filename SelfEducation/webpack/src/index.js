@@ -6,6 +6,7 @@ import AppService from './modules/app.service'
 import { config } from './modules/config'
 // 3 - you can import from component all data
 import './modules/header.component'
+import './css/index.css'
 console.log('config key: ', config.key);
 
 const service = new AppService('Hello webpack!!!');
