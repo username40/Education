@@ -4,6 +4,6 @@ $('<h1 />')
   .text('Jquery')
   .css({
     textAlign: 'center',
-    color: 'blue'
+    color: 'green'
   })
   .appendTo($('header'))
