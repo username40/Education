@@ -12,7 +12,7 @@ module.exports = {
   },
   optimization: {
     minimizer: [new OptimizeCssAssetsPlugin({}),
-      //new UglifyJsPlugin({})
+    new UglifyJsPlugin({})
     ],
   },
   devServer: {
@@ -33,6 +33,11 @@ module.exports = {
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader']
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader"
       }
     ]
   }
