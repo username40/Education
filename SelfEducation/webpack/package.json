@@ -1,0 +1,48 @@
+{
+  "name": "username40-webpack",
+  "version": "1.0.0",
+  "description": "learn webpack project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "dev:watch": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "keywords": [
+    "webpack",
+    "js",
+    "javascript",
+    "node"
+  ],
+  "author": "Slava Romantsov",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "@babel/preset-typescript": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "html-webpack-plugin": "^4.3.0",
+    "less": "^3.11.3",
+    "less-loader": "^6.1.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass": "^1.26.9",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "@babel/polyfill": "^7.10.1",
+    "jquery": "^3.5.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
