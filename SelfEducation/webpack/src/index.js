@@ -8,6 +8,7 @@ import AppService from './modules/app.service'
 import { config } from './modules/config'
 // 3 - you can import from component all data
 import App from './App'
+import './modules/ts.module'
 import './css/index.css'
 import './less/index.less'
 import './scss/index.scss'
