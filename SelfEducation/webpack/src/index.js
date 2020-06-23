@@ -1,3 +1,5 @@
+import React from 'react'
+import { render } from 'react-dom'
 // 3 ways to import files
 // 1 - you import something that exports default
 import AppService from './modules/app.service'
@@ -5,7 +7,7 @@ import AppService from './modules/app.service'
 // for example you can write config.key and you get all your data
 import { config } from './modules/config'
 // 3 - you can import from component all data
-import './modules/header.component'
+import App from './App'
 import './css/index.css'
 import './less/index.less'
 import './scss/index.scss'
@@ -16,3 +18,5 @@ service.log();
 // you can check your code:
 // npm run dev || build
 // node dist/bundle.js
+
+render(<App />, document.getElementById('app'))
