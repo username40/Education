@@ -10,4 +10,10 @@ let tupleNumStrArr: [number, number, number, string] = [1,2,3, '123']; // also t
 // because you can have a situation that you have array with a lot of elements (for ex. 700+) and so what? you will use tuple
 // and write types for all elements?
 
+// so, if you need make empty array expected
+// arrays that contains strings
+// you can write const deepArr: string[][]
+// also it works if want strings or numbers
+// just write : string[][] | number[][]
+const deepArr:string[][] = [['str1']]
 
